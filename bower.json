@@ -1,0 +1,17 @@
+{
+  "name": "ft-date-format",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jake Champion <jakechampion.jake2@googlemail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
