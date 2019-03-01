@@ -18,6 +18,16 @@
     "karma-webpack": "^3.0.5",
     "mocha": "^6.0.2",
     "proclaim": "^3.6.0",
-    "sinon": "^7.2.5"
-  }
+    "sinon": "^7.2.5",
+    "webpack": "^4.29.6"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Financial-Times/ft-date-format.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Financial-Times/ft-date-format/issues"
+  },
+  "homepage": "https://github.com/Financial-Times/ft-date-format#readme"
 }
