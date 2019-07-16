@@ -89,6 +89,16 @@ describe('o-date', () => {
 			proclaim.strictEqual(ftDateFormat.format(date, 'This is \\a co\\mmon string mm'), 'This is a common string 07');
 		});
 
+		it('returns ordinals formatted correctly', () => {
+			const days = ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th', '9th', '10th',
+				'11th', '12th', '13th', '14th', '15th', '16th', '17th', '18th', '19th', '20th',
+				'21st', '22nd', '23rd', '24th', '25th', '26th', '27th', '28th', '29th', '30th', '31st'];
+			
+			for (let i = 1; i <= days.length; i++) {
+				proclaim.strictEqual(ftDateFormat.format(new Date(2000, 0, i), 'do'), days[i - 1]);
+			}
+		});
+
 		it('returns an unpadded 12hour clock value for `h` format', () => {
 			proclaim.strictEqual(ftDateFormat.format(someTimes["midnight"], 'h'), '12');
 			proclaim.strictEqual(ftDateFormat.format(someTimes["1am"], 'h'), '1');
