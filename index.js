@@ -23,6 +23,7 @@ const formatReplacementsMap = {
 	EEE: 'days[date.getDay()].substr(0,3)', // Tue
 	d: 'date.getDate()', // 4
 	dd: 'pad2(date.getDate())', // 04
+	do: 'ordinal(date.getDate())', // 4th
 	m: 'date.getMinutes()', // 5
 	mm: 'pad2(date.getMinutes())', // 05
 	h: '(((date.getHours() + 11) % 12) + 1)', // 3
@@ -46,6 +47,11 @@ function compile(format) {
 
 	let funcString = 'var months= ' + months + ', days= ' + days + ';';
 	funcString += 'function pad2 (number) {return ("0" + number).slice(-2)}';
+	funcString += `function ordinal(number) {
+		const suffixes = ["th", "st", "nd", "rd"];
+		const v = number % 100;
+		return number + (suffixes[(v - 20) % 10] || suffixes[v] || suffixes[0]);
+	}`;
 	funcString += 'return "' + tpl.replace(/\\?[a-z]+/ig, function (match) {
 		if (match.charAt(0) === '\\') {
 			return match.substr(1);
