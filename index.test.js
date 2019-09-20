@@ -3,7 +3,7 @@
 const proclaim = require('proclaim');
 const sinon = require('sinon/pkg/sinon');
 const ftDateFormat = require('./index');
-const window = typeof global === 'undefined' ? self : global; 
+const window = typeof global === 'undefined' ? self : global;
 
 describe('o-date', () => {
 
@@ -62,16 +62,16 @@ describe('o-date', () => {
 		});
 
 		it('returns a date if "date" is passed in as a second argument', () => {
-			proclaim.strictEqual(ftDateFormat.format(someDate, "date"), 'July 18, 2016');
+			proclaim.strictEqual(ftDateFormat.format(someDate, "date"), 'July 18 2016');
 		});
 
 		it('returns a datetime if "datetime" is passed in as a second argument', () => {
-			proclaim.strictEqual(ftDateFormat.format(someDate, "datetime"), 'July 18, 2016 11:12 pm');
+			proclaim.strictEqual(ftDateFormat.format(someDate, "datetime"), 'July 18 2016 11:12 pm');
 		});
 
 		it('doesnt zero pad single digit hours', () => {
 			const someDate = new Date("Mon Jul 18 2016 06:12:11");
-			proclaim.strictEqual(ftDateFormat.format(someDate, "datetime"), 'July 18, 2016 6:12 am');
+			proclaim.strictEqual(ftDateFormat.format(someDate, "datetime"), 'July 18 2016 6:12 am');
 		});
 
 		// This is a bit of a cop-out really as what we're testing here is ftDateFormat's
@@ -93,7 +93,7 @@ describe('o-date', () => {
 			const days = ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th', '9th', '10th',
 				'11th', '12th', '13th', '14th', '15th', '16th', '17th', '18th', '19th', '20th',
 				'21st', '22nd', '23rd', '24th', '25th', '26th', '27th', '28th', '29th', '30th', '31st'];
-			
+
 			for (let i = 1; i <= days.length; i++) {
 				proclaim.strictEqual(ftDateFormat.format(new Date(2000, 0, i), 'do'), days[i - 1]);
 			}

@@ -1,8 +1,8 @@
 const months = '["' + 'January,February,March,April,May,June,July,August,September,October,November,December'.split(',').join('","') + '"]';
 const days = '["' + 'Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday'.split(',').join('","') + '"]';
 const formats = {
-	datetime: 'MMMM d, yyyy h:mm a',
-	date: 'MMMM d, yyyy'
+	datetime: 'MMMM d yyyy h:mm a',
+	date: 'MMMM d yyyy'
 };
 
 const compiledTemplates = {};
