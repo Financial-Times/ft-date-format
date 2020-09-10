@@ -19,7 +19,7 @@
     "mocha": "7.1.1",
     "proclaim": "3.6.0",
     "sinon": "9.0.2",
-    "webpack": "4.42.1"
+    "webpack": "4.44.1"
   },
   "dependencies": {},
   "repository": {
