@@ -1,7 +1,7 @@
 {
     "description": "ft-date-format provides javascript utilities for formatting and updating dates in FT style.",
     "origamiType": "library",
-    "origamiVersion": 1,
+    "origamiVersion": 2,
     "keywords": [],
     "support": "https://github.com/Financial-Times/ft-date-format/issues",
     "supportStatus": "maintained",
