@@ -3,6 +3,7 @@
     "version": "100.0.0-6",
     "description": "Utility for formatting and updating dates for Financial-Times customer-facing products",
     "main": "index.js",
+    "browser": "index.js",
     "scripts": {
         "test": "npm run test:browser && npm run test:node",
         "test:browser": "karma start --single-run",
