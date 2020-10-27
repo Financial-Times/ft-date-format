@@ -2,6 +2,17 @@
     "name": "@financial-times/ft-date-format",
     "version": "100.0.0-7",
     "description": "Utility for formatting and updating dates for Financial-Times customer-facing products",
+    "keywords": [],
+    "homepage": "https://github.com/Financial-Times/ft-date-format#readme",
+    "bugs": {
+        "url": "https://github.com/Financial-Times/ft-date-format/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Financial-Times/ft-date-format.git"
+    },
+    "license": "MIT",
+    "author": "",
     "main": "index.js",
     "browser": "index.js",
     "scripts": {
@@ -9,9 +20,7 @@
         "test:browser": "karma start --single-run",
         "test:node": "mocha index.test.js"
     },
-    "keywords": [],
-    "author": "",
-    "license": "MIT",
+    "dependencies": {},
     "devDependencies": {
         "karma": "5.2.2",
         "karma-chrome-launcher": "3.1.0",
@@ -22,15 +31,6 @@
         "sinon": "9.0.3",
         "webpack": "4.44.2"
     },
-    "dependencies": {},
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Financial-Times/ft-date-format.git"
-    },
-    "bugs": {
-        "url": "https://github.com/Financial-Times/ft-date-format/issues"
-    },
-    "homepage": "https://github.com/Financial-Times/ft-date-format#readme",
     "publishConfig": {
         "registry": "http://localhost:4873"
     }
