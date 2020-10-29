@@ -35,5 +35,8 @@
   },
   "publishConfig": {
     "registry": "https://origami-npm-registry-prototype.herokuapp.com"
+  },
+  "engines": {
+    "npm": "^7"
   }
 }
