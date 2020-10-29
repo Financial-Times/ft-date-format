@@ -1,6 +1,6 @@
 {
   "name": "@financial-times/ft-date-format",
-  "version": "100.0.0-10",
+  "version": "100.0.0-11",
   "description": "Utility for formatting and updating dates for Financial-Times customer-facing products",
   "keywords": [],
   "homepage": "https://github.com/Financial-Times/ft-date-format#readme",
