@@ -1,5 +1,5 @@
 {
-  "name": "@financial-times/ft-date-format",
+  "name": "ft-date-format",
   "version": "100.0.0-12",
   "description": "Utility for formatting and updating dates for Financial-Times customer-facing products",
   "keywords": [],
