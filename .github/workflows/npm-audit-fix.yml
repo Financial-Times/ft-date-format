@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ybiquitous/npm-audit-fix-action@v2.1.5
+      - uses: ybiquitous/npm-audit-fix-action@v2.1.6
         with:
           github_token: ${{ secrets.ORIGAMI_GITHUB_TOKEN }}
