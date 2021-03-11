@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/Financial-Times/ft-date-format/issues"
   },
-  "homepage": "https://github.com/Financial-Times/ft-date-format#readme"
+  "homepage": "https://github.com/Financial-Times/ft-date-format#readme",
+  "engines": {
+    "npm": "^7"
+  }
 }
