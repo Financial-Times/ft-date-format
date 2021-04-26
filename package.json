@@ -32,5 +32,9 @@
   "homepage": "https://github.com/Financial-Times/ft-date-format#readme",
   "engines": {
     "npm": "^7"
+  },
+  "volta": {
+    "node": "14.16.1",
+    "npm": "7.11.1"
   }
 }
