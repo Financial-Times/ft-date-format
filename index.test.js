@@ -124,7 +124,7 @@ describe('o-date', () => {
 			proclaim.strictEqual(ftDateFormat.format(someTimes["midday"], 't'), '12:00pm');
 			proclaim.strictEqual(ftDateFormat.format(someTimes["1pm"], 't'), '1:00pm');
 			proclaim.strictEqual(ftDateFormat.format(someTimes["11pm"], 't'), '11:00pm');
-			proclaim.strictEqual(ftDateFormat.format(someDate, 't'), '11:12am');
+			proclaim.strictEqual(ftDateFormat.format(someDate, 't'), '11:12pm');
 		});
 
 		it('returns an unpadded 24hour clock value for `H` format', () => {
