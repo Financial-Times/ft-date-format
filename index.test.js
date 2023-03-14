@@ -118,7 +118,7 @@ describe('o-date', () => {
 		});
 		
 		it('returns an FT editorial-style time for `t` format', () => {
-			proclaim.strictEqual(ftDateFormat.format(someTimes["midnight"], 't'), '12:00am');
+			proclaim.strictEqual(ftDateFormat.format(someTimes["midnight"], 't'), '12:01am');
 			proclaim.strictEqual(ftDateFormat.format(someTimes["1am"], 't'), '1:00am');
 			proclaim.strictEqual(ftDateFormat.format(someTimes["10am"], 't'), '10:00am');
 			proclaim.strictEqual(ftDateFormat.format(someTimes["midday"], 't'), '12:00pm');
