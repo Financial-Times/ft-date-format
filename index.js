@@ -34,8 +34,7 @@ const formatReplacementsMap = {
 	t: '`${(((date.getHours() + 11) % 12) + 1)}'
 		+ ':'
 		+ '${pad2(date.getMinutes())}'
-		+ '${date.getHours((date.getHours() >= 12 ? "pm" : "am"))'
-	+ '}`' // 3:05pm
+		+ '${date.getHours() >= 12 ? "pm" : "am"}`' // 3:05pm
 };
 
 const inSeconds = {
